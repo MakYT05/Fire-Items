@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "fire_items:item/fire_pickaxe"
+  }
+}

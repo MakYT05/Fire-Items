@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    " C ",
+    " K "
+  ],
+  "key": {
+    "M": {
+      "item": "fire_items:ognium"
+    },
+    "C": {
+      "item": "fire_items:ognium"
+    },
+    "K": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "fire_items:fire_sword"
+  }
+}

@@ -1,0 +1,311 @@
+//{
+//  "events": [
+//    {
+//      "id": "event1",
+//      "trigger": "player_reach_coordinates",
+//      "coordinates": {
+//        "x": 24,
+//        "y": 64,
+//        "z": 1
+//      },
+//      "actions": [
+//        {
+//          "type": "message",
+//          "text": "Добро пожаловать в мой мир!"
+//        },
+//        {
+//          "type": "message",
+//          "text": "Неужели вы спрашиваете кто я?"
+//        },
+//        {
+//          "type": "message",
+//          "text": "Я - БОГ этого мира!"
+//        },
+//        {
+//          "type": "message",
+//          "text": "И вам нужно добыть все мои божественные инструменты."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Но к счастью для вас я добыл сам 1 инструмент - МЕЧ!!!"
+//        },
+//        {
+//          "type": "message",
+//          "text": "И прежде чем его вам дать - давайте проверим ваши навыки."
+//        },
+//        {
+//          "type": "message",
+//          "text": "ОДОЛЕЙТЕ 10 ЗОМБИ!!!"
+//        },
+//        {
+//          "type": "message",
+//          "text": "УДАЧИ!!!"
+//        }
+//      ]
+//    },
+//    {
+//      "id": "event2",
+//      "trigger": "entity_born",
+//      "actions": [
+//        {
+//          "type": "spawn_entities",
+//          "entity": "minecraft:zombie",
+//          "count": 10,
+//          "location": {
+//            "x": 5,
+//            "y": 64,
+//            "z": 1
+//          }
+//        },
+//        {
+//          "type": "wait_for_kill",
+//          "entity": "minecraft:zombie",
+//          "count": 10
+//        },
+//        {
+//          "type": "continue_story"
+//        },
+//        {
+//          "type": "message",
+//          "text": "Ухты..."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Вы..."
+//        },
+//        {
+//          "type": "message",
+//          "text": "СПРАВИЛИСЬ!!!"
+//        },
+//        {
+//          "type": "message",
+//          "text": "Поздравляю, это ваш заслуженный подарок."
+//        },
+//        {
+//          "type": "give_item",
+//          "item": "fire_items:fire_sword",
+//          "count": 1
+//        },
+//        {
+//          "type": "message",
+//          "text": "А теперь прыгайте в портал, что находится в глотке у этой статуи."
+//        }
+//      ]
+//    },
+//    {
+//      "id": "event3",
+//      "trigger": "player_reach_coordinates",
+//      "coordinates": {
+//        "x": -6,
+//        "y": 43,
+//        "z": 1
+//      },
+//      "actions": [
+//        {
+//          "type": "teleport_player",
+//          "location": {
+//            "x": -57,
+//            "y": 64,
+//            "z": 122
+//          }
+//        },
+//        {
+//          "type": "spawn_npc",
+//          "npc_id": "minecraft:villager",
+//          "location": {
+//            "x": -64,
+//            "y": 64,
+//            "z": 130
+//          }
+//        },
+//        {
+//          "type": "message",
+//          "text": "Молодцы!"
+//        },
+//        {
+//          "type": "message",
+//          "text": "Дальше дело за малым."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Именно в аду вы сможете отыскать материалы для создания оставшихся 4 инструментов."
+//        },
+//        {
+//          "type": "message",
+//          "text": "А именно для кирки, мотыги, лопаты и топара."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Они создаются из материала под названием 'огниум', а также за место палок вам нужны будут палки ифритов."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Что вы так на меня смотрите? А кто вам сказал, что будет легко? Хах."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Ладно, ладно, дам вам маленький бонус."
+//        },
+//        {
+//          "type": "give_item",
+//          "item": "minecraft:iron_helmet",
+//          "count": 1
+//        },
+//        {
+//          "type": "give_item",
+//          "item": "minecraft:iron_chestplate",
+//          "count": 1
+//        },
+//        {
+//          "type": "give_item",
+//          "item": "minecraft:iron_leggings",
+//          "count": 1
+//        },
+//        {
+//          "type": "give_item",
+//          "item": "minecraft:iron_boots",
+//          "count": 1
+//        },
+//        {
+//          "type": "message",
+//          "text": "И ещё..."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Дам вам одну подсказку: 'Огниум' находится в сундуках, спрятанные в крепостях!"
+//        },
+//        {
+//          "type": "message",
+//          "text": "А теперь заходите в портал."
+//        }
+//      ]
+//    },
+//    {
+//      "id": "event4",
+//      "trigger": "to_dimension",
+//      "actions": [
+//        {
+//          "type": "message",
+//          "text": "Вы вошли в ад."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Будьте готовы к новым вызовам!"
+//        },
+//        {
+//          "type": "message",
+//          "text": "В этом мире прячутся самые опасные существа."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Но в то же время здесь вы найдёте необходимые ресурсы."
+//        },
+//        {
+//          "type": "message",
+//          "text": "Удачи, смельчаки!"
+//        }
+//      ]
+//    },
+//    {
+//      "id": "event5",
+//      "trigger": "from_dimension",
+//      "actions": [
+//        {
+//          "type": "teleport_player",
+//          "location": {
+//            "x": -189,
+//            "y": 78,
+//            "z": 25
+//          }
+//        },
+//        {
+//          "type": "spawn_npc",
+//          "npc_id": "minecraft:villager",
+//          "location": {
+//            "x": -196,
+//            "y": 78,
+//            "z": 24
+//          }
+//        },
+//        {
+//          "type": "message",
+//          "text": "О, вы вернулись, давайте мне сюда все инструменты."
+//        },
+//        {
+//          "type": "check_items",
+//          "items": [
+//            {
+//              "item": "fire_items:fire_sword",
+//              "count": 1
+//            },
+//            {
+//              "item": "fire_items:fire_pickaxe",
+//              "count": 1
+//            },
+//            {
+//              "item": "fire_items:fire_axe",
+//              "count": 1
+//            },
+//            {
+//              "item": "fire_items:fire_shovel",
+//              "count": 1
+//            },
+//            {
+//              "item": "fire_items:fire_hoe",
+//              "count": 1
+//            }
+//          ],
+//          "actions_on_success": [
+//            {
+//              "type": "remove_items",
+//              "items": [
+//                {
+//                  "item": "fire_items:fire_sword",
+//                  "count": 1
+//                },
+//                {
+//                  "item": "fire_items:fire_pickaxe",
+//                  "count": 1
+//                },
+//                {
+//                  "item": "fire_items:fire_axe",
+//                  "count": 1
+//                },
+//                {
+//                  "item": "fire_items:fire_shovel",
+//                  "count": 1
+//                },
+//                {
+//                  "item": "fire_items:fire_hoe",
+//                  "count": 1
+//                }
+//              ]
+//            },
+//            {
+//              "type": "message",
+//              "text": "МОЛОДЦЫ!!!"
+//            },
+//            {
+//              "type": "message",
+//              "text": "Вы смогли сделать это!!!"
+//            },
+//            {
+//              "type": "message",
+//              "text": "Как же я рад!"
+//            },
+//            {
+//              "type": "message",
+//              "text": "Отныне и навсегда вы являетесь героями этого мира!!!"
+//            }
+//          ],
+//          "actions_on_failure": [
+//            {
+//              "type": "message",
+//              "text": "Вы еще не собрали все необходимые инструменты!"
+//            }
+//          ]
+//        }
+//      ]
+//    }
+//  ]
+//}
